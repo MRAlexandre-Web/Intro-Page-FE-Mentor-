@@ -5,7 +5,7 @@ import logo from "../assets/logo.svg";
 const Navbar = () => {
   return (
     <>
-      <nav className="bg-white p-4">
+      <nav className="bg-white p-3">
         <div className="flex justify-between">
           <img src={logo} alt="Snap logo" />
           <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg">
