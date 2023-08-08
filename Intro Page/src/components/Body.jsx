@@ -7,7 +7,7 @@ const Body = () => {
   return (
     <>
       <img src={MobileImg} alt="Hero image" className="mt-2" />
-      <div className=" text-center mt-9 flex flex-col gap-3">
+      <div className=" text-center mt-9 flex flex-col gap-3 pb-5">
         <h1 className="text-3xl font-bold">Make remote work</h1>
         <p className="font-medium text-zinc-500">
           Get your team in sync, no matter your location. Streamline processes,
