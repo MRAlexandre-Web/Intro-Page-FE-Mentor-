@@ -1,5 +1,6 @@
 import React from "react";
 import MobileImg from "../assets/images/image-hero-mobile.png";
+import Footer from "./Footer";
 import "../index.css";
 
 const Body = () => {
@@ -15,6 +16,7 @@ const Body = () => {
         <button className="m-auto my-4 bg-black text-white p-3 w-36 rounded-xl hover:bg-white hover:text-black hover:border hover:border-black transition-all duration-300">
           Learn more
         </button>
+        <Footer />
       </div>
     </>
   );
