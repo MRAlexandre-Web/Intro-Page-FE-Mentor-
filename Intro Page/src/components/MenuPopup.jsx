@@ -1,14 +1,21 @@
 import React, { useState } from "react";
+import FeatureOption from "./FeatureOption";
+import "../index.css";
 
-const MenuPopup = () => {
+const MenuPopup = ({ menuVisible, setMenuVisible }) => {
   const [isPopupVisible, setPopupVisible] = useState(true); // close opposite function of menu//
 
   const togglePopup = () => {
     setPopupVisible(!isPopupVisible);
+    setMenuVisible(!menuVisible);
   };
 
   return (
-    <div>
+    <div
+      className={`menu-popup fixed inset-y-0 right-0 w-1/2 h-full transform transition-transform duration-300 bg-white p-5 ${
+        isPopupVisible ? "translate-x-0" : "-translate-x-full"
+      }`}
+    >
       <div>
         <svg
           width="26"
@@ -22,8 +29,24 @@ const MenuPopup = () => {
           </g>
         </svg>
       </div>
-      {/* Terciary to show items of menu, will contain FeatureOption and CompanyOption*/}
-      {/* Div containing login and Register button */}
+      {isPopupVisible ? (
+        <>
+          <div>
+            <ul>
+              <li>
+                <FeatureOption />
+              </li>
+              <li>Company</li>
+              <li>Careers</li>
+              <li>About</li>
+            </ul>
+          </div>
+          <div>
+            <a href="#">Login</a>
+            <button>Register</button>
+          </div>
+        </>
+      ) : null}
     </div>
   );
 };
