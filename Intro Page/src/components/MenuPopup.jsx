@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import FeatureOption from "./FeatureOption";
+import CompanyOption from "./CompanyOption";
 import "../index.css";
 
 const MenuPopup = ({ menuVisible, setMenuVisible }) => {
@@ -44,14 +45,18 @@ const MenuPopup = ({ menuVisible, setMenuVisible }) => {
                 <li>
                   <FeatureOption />
                 </li>
-                <li>Company</li>
+                <li>
+                  <CompanyOption />
+                </li>
                 <li>Careers</li>
                 <li>About</li>
               </ul>
             </div>
-            <div className="text-slate-600 flex flex-col text-center mt-9 gap-2">
+            <div className="text-slate-600 flex flex-col text-center mt-9 gap-2 hover:cursor-pointer">
               <a href="#">Login</a>
-              <button>Register</button>
+              <button className="border border-black p-2 rounded-xl">
+                Register
+              </button>
             </div>
           </>
         ) : null}

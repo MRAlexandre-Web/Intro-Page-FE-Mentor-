@@ -12,5 +12,10 @@
 }
 
 li {
-  margin-bottom: 12px;
+  margin-bottom: 15px;
+}
+
+li:hover {
+  cursor: pointer;
+  color: black;
 }
