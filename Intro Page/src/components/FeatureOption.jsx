@@ -9,19 +9,32 @@ const FeatureOption = () => {
 
   return (
     <>
-      <p onClick={handleVisability}>Features</p>
+      <div className=" flex items-center">
+        <p onClick={handleVisability} className=" mr-4">
+          Features
+        </p>
+        {isVisible ? (
+          <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+            <path
+              stroke="#686868"
+              strokeWidth="1.5"
+              fill="none"
+              d="m1 5 4-4 4 4"
+            />
+          </svg>
+        ) : (
+          <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+            <path
+              stroke="#686868"
+              strokeWidth="1.5"
+              fill="none"
+              d="m1 1 4 4 4-4"
+            />
+          </svg>
+        )}
+      </div>
       {isVisible ? (
         <div>
-          <span>
-            <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-              <path
-                stroke="#686868"
-                strokeWidth="1.5"
-                fill="none"
-                d="m1 5 4-4 4 4"
-              />
-            </svg>
-          </span>
           <ul>
             <li>
               <svg width="14" height="16" xmlns="http://www.w3.org/2000/svg">
@@ -57,18 +70,7 @@ const FeatureOption = () => {
             </li>
           </ul>
         </div>
-      ) : (
-        <span>
-          <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-            <path
-              stroke="#686868"
-              strokeWidth="1.5"
-              fill="none"
-              d="m1 1 4 4 4-4"
-            />
-          </svg>
-        </span>
-      )}
+      ) : null}
     </>
   );
 };

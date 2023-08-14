@@ -3,7 +3,7 @@ import FeatureOption from "./FeatureOption";
 import "../index.css";
 
 const MenuPopup = ({ menuVisible, setMenuVisible }) => {
-  // props for state control of menue and close menue
+  // props for state control of menu and close menu
   const [isPopupVisible, setPopupVisible] = useState(true); // close opposite function of menu//
 
   const togglePopup = () => {
@@ -20,11 +20,11 @@ const MenuPopup = ({ menuVisible, setMenuVisible }) => {
         />
       )}
       <div
-        className={`fixed inset-y-0 right-0 w-1/2 h-screen transform transition-transform duration-300 bg-white p-5 ${
+        className={`fixed inset-y-0 right-0 w-3/5 h-screen transform transition-transform duration-300 bg-white p-3 pl-6 ${
           isPopupVisible ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <div>
+        <div className=" flex justify-end p-1 mb-3">
           <svg
             width="26"
             height="26"
@@ -39,7 +39,7 @@ const MenuPopup = ({ menuVisible, setMenuVisible }) => {
         </div>
         {isPopupVisible ? (
           <>
-            <div>
+            <div className=" text-slate-600">
               <ul>
                 <li>
                   <FeatureOption />
@@ -49,7 +49,7 @@ const MenuPopup = ({ menuVisible, setMenuVisible }) => {
                 <li>About</li>
               </ul>
             </div>
-            <div>
+            <div className="text-slate-600 flex flex-col text-center mt-9 gap-2">
               <a href="#">Login</a>
               <button>Register</button>
             </div>
