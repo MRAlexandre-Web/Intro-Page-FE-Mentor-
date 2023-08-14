@@ -28,7 +28,7 @@ const Navbar = () => {
         </div>
       </nav>
       {menuVisible ? (
-        <div>
+        <div className=" absolute z-50">
           <MenuPopup
             menuVisible={menuVisible}
             setMenuVisible={setMenuVisible}
