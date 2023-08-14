@@ -3,7 +3,7 @@ import "../index.css";
 
 const Footer = () => {
   return (
-    <div className=" mt-4 flex items-center">
+    <div className=" mt-4 flex justify-evenly items-center">
       <svg
         width="114"
         height="20"
