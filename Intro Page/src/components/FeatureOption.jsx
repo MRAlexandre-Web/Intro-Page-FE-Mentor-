@@ -10,7 +10,9 @@ const FeatureOption = () => {
   return (
     <>
       <div className=" flex items-center" onClick={handleVisability}>
-        <p className=" mr-2 ">Features</p>
+        <p className=" mr-2 transition-colors duration-200 ease-in-out hover:text-slate-900">
+          Features
+        </p>
         {isVisible ? (
           <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
             <path

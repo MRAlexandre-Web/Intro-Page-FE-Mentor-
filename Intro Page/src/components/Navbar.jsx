@@ -33,8 +33,12 @@ const Navbar = () => {
           <div className="flex ml-12 gap-4 cursor-pointer">
             <FeatureOption />
             <CompanyOption />
-            <p>Careers</p>
-            <p>About</p>
+            <p className=" transition-colors duration-200 ease-in-out hover:text-slate-900">
+              Careers
+            </p>
+            <p className=" transition-colors duration-200 ease-in-out hover:text-slate-900">
+              About
+            </p>
           </div>
           <div className="flex gap-6 items-center cursor-pointer">
             <a href="#">Login</a>
