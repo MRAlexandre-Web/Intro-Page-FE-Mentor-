@@ -32,7 +32,7 @@ const FeatureOption = () => {
         )}
       </div>
       {isVisible ? (
-        <div className=" mx-4 my-3 text-slate-600">
+        <div className=" mx-4 my-3 text-slate-600 sm:absolute sm: left-14  sm:w-36 sm:h-36 sm:mt-9 sm:p-3 sm:pl-5 sm:rounded-xl bg-white sm:shadow-xl">
           <ul>
             <li>
               <svg

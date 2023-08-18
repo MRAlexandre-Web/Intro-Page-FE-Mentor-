@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-white p-3 text-slate-600 sm:mt-2 sm:flex sm:text-sm">
+      <nav className=" bg-gray-50 p-3 text-slate-600 sm:mt-2 sm:flex sm:text-sm">
         <div className="flex justify-between items-center">
           <img src={logo} alt="Snap logo" />
           <svg
@@ -30,13 +30,13 @@ const Navbar = () => {
           </svg>
         </div>
         <div className="hidden md:flex items-center justify-between md:flex-grow">
-          <div className="flex ml-10 gap-4">
+          <div className="flex ml-12 gap-4 cursor-pointer">
             <FeatureOption />
             <CompanyOption />
             <p>Careers</p>
             <p>About</p>
           </div>
-          <div className="flex gap-4 items-center">
+          <div className="flex gap-6 items-center cursor-pointer">
             <a href="#">Login</a>
             <button className="border border-black py-2 px-4 rounded-xl">
               Register
