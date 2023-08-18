@@ -11,11 +11,19 @@
   box-sizing: border-box;
 }
 
+body {
+  position: relative;
+  background-color: hsl(0, 0%, 98%);
+}
+
 li {
   margin-bottom: 15px;
 }
 
-li:hover {
+li:hover,
+button:hover,
+a:hover {
   cursor: pointer;
   color: black;
+  transition: 0.5s;
 }
